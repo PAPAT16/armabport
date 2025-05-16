@@ -1,0 +1,11 @@
+.yo:hover{
+    color: white;
+    font-weight: 600;
+}
+.yo:hover:img{
+    display: none;
+}
+body{
+    font-family: 'Clash Display', sans-serif;
+    
+}
