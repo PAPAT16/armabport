@@ -23,4 +23,20 @@ window.addEventListener('scroll', ()=>{
     }
 
 })
+  (function(){
+    emailjs.init("5pJZmruLnGLhRQkUq"); // Replace with your EmailJS public key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event){
+    event.preventDefault();
+
+    emailjs.sendForm("service_9g99es9", "template_m3og6rk", this)
+      .then(() => {
+        alert("Message sent successfully!");
+        this.reset(); // Clear the form
+      }, (error) => {
+        alert("Failed to send message. Please try again.");
+        console.log(error);
+      });
+  });
 
