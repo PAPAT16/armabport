@@ -267,15 +267,15 @@ My resume <img src="./images/download-icon.png" class="w-4"></a>
         If you have any questions, comment or feedback, please the form below.</p>
 <form action="https://formsubmit.co/abdulrahmanmosuro07@gmail.com" method="POST" class="max-w-2xl mx-auto">
     <div class="grid sm:grid-cols-2 gap-6 mt-10 mb-8">
-        <input type="text" placeholder="Enter your name" class="flex-1 p-3 
+        <input type="text" placeholder="Enter your name" name="user_name" class="flex-1 p-3 
         outline-none border[0.5px] border-gray-400 rounded-md bg-white">
         
-        <input type="email" placeholder="peakyblinder101@gmail.com" class="flex-1 p-3 
+        <input type="email" placeholder="peakyblinder101@gmail.com" name="user_email" class="flex-1 p-3 
         outline-none border[0.5px] border-gray-400 rounded-md bg-white">
     </div>
-         <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px]
+         <textarea rows="6" placeholder="Enter your message" name="message" class="w-full p-4 outline-none border-[0.5px]
           border-gray-400 rounded-md bg-white mb-6"></textarea> 
-          <button class="py-3 px-8 w-max flex items-center justify-center gap-2 
+          <button type="submit" class="py-3 px-8 w-max flex items-center justify-center gap-2 
           bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500">Submit Now
              <img src="./images/right-arrow-white.png" class="w-4"></button>
              <input type="hidden" name="_captcha" value="false">
@@ -304,5 +304,7 @@ My resume <img src="./images/download-icon.png" class="w-4"></a>
      </div>
      </div>
  <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 </body>
 </html>
